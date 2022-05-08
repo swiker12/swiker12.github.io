@@ -15,6 +15,7 @@ function cargar() {
 function clickSi(){
 
 alertify.confirm('Gran elección sabia que me ibas a decir que siiii 😍',function(){ alertify.success('Ok') });
+document.getElementById('link').style.display = "block";
 }
 
 let left1 = 0, left2 = 0, top1 = 0, top2 = 0;
@@ -68,30 +69,11 @@ function raton(){
       }
 }
 
+function nuevolink(){
 
-
-document.addEventListener('click', e => {
-    if (e.target === btnSi) {
-        Swal.fire({
-            title: 'Ya me esperaba esa respuesta mi amor ',
-            confirmButtonText: 'Dale click 😊',
-            width: 600,
-            padding: '3em',
-            color: '#716add',
-            background: 'rgba(207, 208, 218, 1)',
-            backdrop: `
-              rgba(0,0,123,0.4)
-              url("/img/cat.gif")
-              left top
-              no-repeat
-            `
-        }).then((result) => {
-            if (result.isConfirmed) {
-                let url = "https://api.whatsapp.com/send?phone=593992039435&text=" + "Si acepto mi amor 🥰" + "%0A";
+                    let url = "https://api.whatsapp.com/send?phone=633748207&text=" + "Claro que acepto, jeje 🥰" + "%0A";
                 window.open(url, "Enviar");
-            }
-        })
-    }
-})
+}
+
 
 
