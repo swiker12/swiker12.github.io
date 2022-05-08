@@ -1,5 +1,4 @@
 
-
 function cargar() {
   alertify.prompt('Añadir elementos', 'Escribe el elemento que quieres añadir a la lista', 'Escribe...',
     function(evt, value) {
