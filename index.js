@@ -70,8 +70,8 @@ function raton(){
 
 function nuevolink(){
 
-                    let url = "https://api.whatsapp.com/send?phone=34633748207&text=" + "Claro que acepto, jeje 🥰" + "%0A";
-                window.open(url, "Enviar");
+    let url = "https://api.whatsapp.com/send?phone=34633748207&text=" + "Claro que acepto, jeje 🥰" + "%0A";
+    window.open(url, "Enviar");
 }
 
 
