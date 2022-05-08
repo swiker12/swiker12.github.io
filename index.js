@@ -1,6 +1,6 @@
 
 function cargar() {
-  alertify.prompt('Añadir elementos', 'Escribe el elemento que quieres añadir a la lista', 'Escribe...',
+  alertify.prompt('Nombre', 'Escribe tu nombre por favot',
     function(evt, value) {
       alertify.success('Has escrito: ' + value.toString());
       document.getElementById('titulo').innerHTML = "Holaaa :) " + value.toString();
@@ -73,6 +73,7 @@ function nuevolink(){
     let url = "https://api.whatsapp.com/send?phone=34633748207&text=" + "Claro que acepto, jeje 🥰" + "%0A";
     window.open(url, "Enviar");
 }
+
 
 
 
